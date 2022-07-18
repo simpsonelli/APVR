@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/360Video_07072022.unity
+    path: Assets/Scenes/Gallery.unity
+    guid: d168f1dbcebd8ab48811b7ebb82e4f31
+  - enabled: 1
+    path: Assets/Scenes/360Video.unity
     guid: a70bf88f9cc0aa241844461ed225c9ec
   - enabled: 1
-    path: Assets/Scenes/Cinema_07072022.unity
+    path: Assets/Scenes/Cinema.unity
     guid: 145661172a3a834448607f3112e02019
-  - enabled: 1
-    path: Assets/Scenes/Gallery_070702022.unity
-    guid: d168f1dbcebd8ab48811b7ebb82e4f31
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 4f25e0a0c60824f4397145e156f3f4d7, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 06555ff29d9cf994ebbcd7c820d004b9, type: 2}

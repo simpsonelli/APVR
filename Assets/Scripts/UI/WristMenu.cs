@@ -11,8 +11,6 @@ public class WristMenu : MonoBehaviour
     public GameObject wristUI;
     public bool activeWristUI;
     public AudioSource openMenu;
-   
-
     public XRRig moveProvider;
 
     private void Start()
@@ -26,7 +24,7 @@ public class WristMenu : MonoBehaviour
         IEnumerator DelaySceneLoad()
         {
             yield return new WaitForSeconds(1.0f);
-            SceneManager.LoadScene("Gallery_07072022");
+            SceneManager.LoadScene("Gallery");
         }
     }
 
@@ -36,10 +34,9 @@ public class WristMenu : MonoBehaviour
         IEnumerator DelaySceneLoad()
         {
             yield return new WaitForSeconds(1.0f);
-            SceneManager.LoadScene("Cinema_07072022");
+            SceneManager.LoadScene("Cinema");
         }
     }
-
 
     public void OnButton3Clicked()
     {
@@ -47,7 +44,7 @@ public class WristMenu : MonoBehaviour
         IEnumerator DelaySceneLoad()
         {
             yield return new WaitForSeconds(1.0f);
-            SceneManager.LoadScene("360Video_07072022");
+            SceneManager.LoadScene("360Video");
         }
     }
 
@@ -57,7 +54,6 @@ public class WristMenu : MonoBehaviour
         Debug.Log("Quit app");
     }
 
-   
 
     public void MenuPressed(InputAction.CallbackContext context)
     {
@@ -78,10 +74,5 @@ public class WristMenu : MonoBehaviour
             activeWristUI = true;
             openMenu.Play();
         }
-
-        ////Deactivating UI Controller by default
-        //wristUI.GetComponent<XRRayInteractor>().enabled = false;
-        //wristUI.GetComponent<XRInteractorLineVisual>().enabled = false;
-
     }
 }
