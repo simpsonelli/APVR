@@ -11,8 +11,7 @@ public class PlayFilm : MonoBehaviour
     private int videoClipIndex;
     public GameObject directionalLight;
     public GameObject pointLights;
-    public GameObject progressBar;
-    public GameObject progressBarBG;
+   
 
 
     private void Awake()
