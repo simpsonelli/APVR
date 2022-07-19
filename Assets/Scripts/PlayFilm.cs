@@ -8,7 +8,9 @@ public class PlayFilm : MonoBehaviour
     public VideoClip[] videoClips;
     private VideoPlayer videoPlayer;
     private int videoClipIndex;
+    public GameObject directionalLight;
 
+   
     private void Awake()
     {
         videoPlayer = GetComponent<VideoPlayer>();
@@ -28,6 +30,7 @@ public class PlayFilm : MonoBehaviour
         }
         videoPlayer.clip = videoClips[videoClipIndex];
         videoPlayer.Play();
+        directionalLight.SetActive(false);
     }
 
     public void PlayPrevious()
@@ -39,15 +42,18 @@ public class PlayFilm : MonoBehaviour
         }
         videoPlayer.clip = videoClips[videoClipIndex];
         videoPlayer.Play();
+        directionalLight.SetActive(false);
     }
 
     public void PauseVideo()
     {
         videoPlayer.Pause();
+        directionalLight.SetActive(true);
     }
 
     public void PlayVideo()
     {
         videoPlayer.Play();
+        directionalLight.SetActive(false);
     }
 }

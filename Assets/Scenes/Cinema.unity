@@ -847,6 +847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoClips: []
+  directionalLight: {fileID: 0}
 --- !u!82 &440475610
 AudioSource:
   m_ObjectHideFlags: 0
@@ -984,9 +985,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: db32cbb50682dfd4e9bc14b702777ef1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ac3595e1ba6f3b64fb6100d1ed9b62bb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.401
+  m_Volume: 0.795
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1088,6 +1089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoClips: []
+  directionalLight: {fileID: 0}
 --- !u!82 &554214070
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1271,6 +1273,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3770055478337163193, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770863856340515607, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1283,11 +1289,19 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3797106850655903815, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3797680714252684497, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3798283412105394100, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3798332559591040841, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -1299,7 +1313,15 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3798678232176226579, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3798735426202823631, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3798771845473780463, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -1387,6 +1409,7 @@ PrefabInstance:
     - {fileID: 25646414, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}
     - {fileID: 25646416, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}
     - {fileID: 25646418, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}
+    - {fileID: 25646430, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}
 --- !u!1 &755283759 stripped
 GameObject:
@@ -1410,6 +1433,7 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 2ad9f3ca63e8fcb49bc3d67dd56e5248, type: 3}
   - {fileID: 32900000, guid: a180434efb1605e44831b3e2b4632841, type: 3}
   - {fileID: 32900000, guid: 98230f1389d7c9a45b06fbc8ebbc2506, type: 3}
+  directionalLight: {fileID: 2032574528}
 --- !u!328 &755283762 stripped
 VideoPlayer:
   m_CorrespondingSourceObject: {fileID: 1208303388, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}
@@ -1709,6 +1733,7 @@ GameObject:
   - component: {fileID: 1458741398}
   - component: {fileID: 1458741397}
   - component: {fileID: 1458741402}
+  - component: {fileID: 1458741401}
   m_Layer: 0
   m_Name: Screen
   m_TagString: Untagged
@@ -1798,6 +1823,19 @@ Transform:
   m_Father: {fileID: 292580992}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 27.651, y: 0, z: 0}
+--- !u!114 &1458741401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458741396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3530c3b4f30a5e44b91b7d915bd06a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dimScreen: 0
 --- !u!54 &1458741402
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2316,6 +2354,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6813333726427918621, guid: 6df6a05acc811f54fa3de6d9f8a8d228, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813333726427918621, guid: 6df6a05acc811f54fa3de6d9f8a8d228, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 755283760}
@@ -2324,7 +2366,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 500430152}
     - target: {fileID: 6813333726427918621, guid: 6df6a05acc811f54fa3de6d9f8a8d228, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 755283759}
+    - target: {fileID: 6813333726427918621, guid: 6df6a05acc811f54fa3de6d9f8a8d228, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813333726427918621, guid: 6df6a05acc811f54fa3de6d9f8a8d228, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6813333726427918621, guid: 6df6a05acc811f54fa3de6d9f8a8d228, type: 3}
@@ -2341,6 +2391,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6813333726427918621, guid: 6df6a05acc811f54fa3de6d9f8a8d228, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813333726427918621, guid: 6df6a05acc811f54fa3de6d9f8a8d228, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6813333726427918621, guid: 6df6a05acc811f54fa3de6d9f8a8d228, type: 3}
