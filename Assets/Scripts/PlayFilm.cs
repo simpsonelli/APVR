@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using TMPro;
 
 public class PlayFilm : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayFilm : MonoBehaviour
     private VideoPlayer videoPlayer;
     private int videoClipIndex;
     public GameObject directionalLight;
+    public GameObject pointLights;
 
    
     private void Awake()
@@ -31,6 +33,8 @@ public class PlayFilm : MonoBehaviour
         videoPlayer.clip = videoClips[videoClipIndex];
         videoPlayer.Play();
         directionalLight.SetActive(false);
+        pointLights.SetActive(false);
+        
     }
 
     public void PlayPrevious()
@@ -43,17 +47,21 @@ public class PlayFilm : MonoBehaviour
         videoPlayer.clip = videoClips[videoClipIndex];
         videoPlayer.Play();
         directionalLight.SetActive(false);
+        pointLights.SetActive(false);
     }
 
     public void PauseVideo()
     {
         videoPlayer.Pause();
         directionalLight.SetActive(true);
+        pointLights.SetActive(true);
+
     }
 
     public void PlayVideo()
     {
         videoPlayer.Play();
         directionalLight.SetActive(false);
+        pointLights.SetActive(false);
     }
 }
