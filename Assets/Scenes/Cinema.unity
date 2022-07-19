@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: babb526a0c99bbc49a57597e4f7d179e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPlayer: {fileID: 755283762}
+  player: {fileID: 0}
 --- !u!1 &109694669
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,6 +784,8 @@ MonoBehaviour:
   videoClips: []
   directionalLight: {fileID: 0}
   pointLights: {fileID: 0}
+  progressBar: {fileID: 0}
+  progressBarBG: {fileID: 0}
 --- !u!82 &440475610
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1014,6 +1016,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6475217457866799813, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 6475217457866799813, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6475217457866799813, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6475217458242414445, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6475217458242414445, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6475217458242414445, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6475217458496322120, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 6475217458496322120, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6475217458496322120, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.41
+      objectReference: {fileID: 0}
     - target: {fileID: 6475217459320451116, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1024,7 +1062,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7049036142872101539, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
       propertyPath: m_Name
-      value: XR Origin UI Variant Variant
+      value: XR Rig
       objectReference: {fileID: 0}
     - target: {fileID: 7049036142872101540, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
       propertyPath: m_RootOrder
@@ -1036,11 +1074,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7049036142872101540, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.511
+      value: 0.451
       objectReference: {fileID: 0}
     - target: {fileID: 7049036142872101540, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.617
+      value: -20.747
       objectReference: {fileID: 0}
     - target: {fileID: 7049036142872101540, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1092,6 +1130,8 @@ MonoBehaviour:
   videoClips: []
   directionalLight: {fileID: 0}
   pointLights: {fileID: 0}
+  progressBar: {fileID: 0}
+  progressBarBG: {fileID: 0}
 --- !u!82 &554214070
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1443,11 +1483,8 @@ MonoBehaviour:
   - {fileID: 32900000, guid: a180434efb1605e44831b3e2b4632841, type: 3}
   directionalLight: {fileID: 2032574528}
   pointLights: {fileID: 693349427}
---- !u!328 &755283762 stripped
-VideoPlayer:
-  m_CorrespondingSourceObject: {fileID: 1208303388, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}
-  m_PrefabInstance: {fileID: 755283758}
-  m_PrefabAsset: {fileID: 0}
+  progressBar: {fileID: 0}
+  progressBarBG: {fileID: 0}
 --- !u!4 &756265984 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8291807072370511106, guid: ca8f5d7e1fa2e3d4d93a9c0683ec40b9, type: 3}

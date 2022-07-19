@@ -988,7 +988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 380432297}
-  XRRig: {fileID: 0}
+  XRRig: {fileID: 1795505628}
   canMove: {fileID: 0}
   themeMusic: {fileID: 703610337}
 --- !u!328 &380432293 stripped
@@ -2041,8 +2041,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1146525964}
-  XRRig: {fileID: 0}
-  canMove: {fileID: 0}
+  XRRig: {fileID: 1795505628}
+  canMove: {fileID: 1795505627}
   themeMusic: {fileID: 703610337}
 --- !u!328 &1146525960 stripped
 VideoPlayer:
@@ -2179,8 +2179,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1382888056}
-  XRRig: {fileID: 0}
-  canMove: {fileID: 0}
+  XRRig: {fileID: 1795505628}
+  canMove: {fileID: 1795505627}
   themeMusic: {fileID: 703610337}
 --- !u!328 &1382888058 stripped
 VideoPlayer:
@@ -3024,7 +3024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7049036142872101539, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
       propertyPath: m_Name
-      value: XR Origin UI Variant Variant
+      value: XR Rig
       objectReference: {fileID: 0}
     - target: {fileID: 7049036142872101540, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
       propertyPath: m_RootOrder
@@ -3072,6 +3072,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
+--- !u!114 &1795505627 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7049036142872101537, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
+  m_PrefabInstance: {fileID: 1795505626}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795505628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1795505628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7049036142872101539, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
+  m_PrefabInstance: {fileID: 1795505626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1804423742
 GameObject:
   m_ObjectHideFlags: 0
@@ -3667,8 +3683,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2139196815}
-  XRRig: {fileID: 0}
-  canMove: {fileID: 0}
+  XRRig: {fileID: 1795505628}
+  canMove: {fileID: 1795505627}
   themeMusic: {fileID: 703610337}
 --- !u!328 &2139196811 stripped
 VideoPlayer:
