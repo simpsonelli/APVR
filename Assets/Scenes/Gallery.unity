@@ -34670,7 +34670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7049036142872101539, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
       propertyPath: m_Name
-      value: XR Origin UI Variant
+      value: XR Rig
       objectReference: {fileID: 0}
     - target: {fileID: 7049036142872101540, guid: d4ce17c20c20c6a46b4ecb37e2a48d86, type: 3}
       propertyPath: m_RootOrder
