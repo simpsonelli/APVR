@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
-    public void OnButtonClicked()
+   public void JustStart()
     {
         SceneManager.LoadScene("Gallery");
     }
+
+   
 }
