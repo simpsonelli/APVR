@@ -211,7 +211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: babb526a0c99bbc49a57597e4f7d179e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!1 &109694669
 GameObject:
   m_ObjectHideFlags: 0
@@ -2037,6 +2036,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 5101170579668010660, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
+      propertyPath: m_Height
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5101170579668010662, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2047,7 +2050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5101170579668010662, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.282
+      value: -0.033
       objectReference: {fileID: 0}
     - target: {fileID: 5101170579668010662, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
       propertyPath: m_LocalPosition.z

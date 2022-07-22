@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using RedTeam19;
 
 public class PlaySong : MonoBehaviour
 {
@@ -18,8 +19,17 @@ public class PlaySong : MonoBehaviour
     private bool isCalled = false;
     public Material skybox;
 
+    VRScreenEffects VRFX;
+    [SerializeField] GameObject screenFade;
+
+    private void Awake()
+    {
+        VRFX = screenFade.GetComponent<VRScreenEffects>();
+    }
+
     public void OnTriggerEnter(Collider other)
     {
+        VRFX.ScreenFlash();
         ChangeSkybox();
         galleryLights.SetActive(false);
 
