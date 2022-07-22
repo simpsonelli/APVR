@@ -801,6 +801,7 @@ MonoBehaviour:
   activeWristUI: 0
   openMenu: {fileID: 0}
   moveProvider: {fileID: 0}
+  screenFade: {fileID: 0}
 --- !u!1 &8755856333012773651
 GameObject:
   m_ObjectHideFlags: 0
@@ -2371,6 +2372,7 @@ MonoBehaviour:
   activeWristUI: 1
   openMenu: {fileID: 0}
   moveProvider: {fileID: 0}
+  screenFade: {fileID: 0}
 --- !u!1 &8755856333957541360
 GameObject:
   m_ObjectHideFlags: 0

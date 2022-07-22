@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
+using RedTeam19;
 
 public class WristMenu : MonoBehaviour
 {
@@ -12,7 +13,13 @@ public class WristMenu : MonoBehaviour
     public bool activeWristUI;
     public AudioSource openMenu;
     public XRRig moveProvider;
+     VRScreenEffects VRFX;
+    [SerializeField] GameObject screenFade;
 
+    private void Awake()
+    {
+        VRFX = screenFade.GetComponent<VRScreenEffects>();
+    }
     private void Start()
     {
         DisplayWristUI();
@@ -23,7 +30,8 @@ public class WristMenu : MonoBehaviour
         StartCoroutine(DelaySceneLoad());
         IEnumerator DelaySceneLoad()
         {
-            yield return new WaitForSeconds(1.0f);
+            VRFX.FadeOut();
+            yield return new WaitForSeconds(1.5f);
             SceneManager.LoadScene("Gallery");
         }
     }
@@ -33,7 +41,8 @@ public class WristMenu : MonoBehaviour
         StartCoroutine(DelaySceneLoad());
         IEnumerator DelaySceneLoad()
         {
-            yield return new WaitForSeconds(1.0f);
+            VRFX.FadeOut();
+            yield return new WaitForSeconds(1.5f);
             SceneManager.LoadScene("Cinema");
         }
     }
@@ -43,13 +52,15 @@ public class WristMenu : MonoBehaviour
         StartCoroutine(DelaySceneLoad());
         IEnumerator DelaySceneLoad()
         {
-            yield return new WaitForSeconds(1.0f);
+            VRFX.FadeOut();
+            yield return new WaitForSeconds(1.5f);
             SceneManager.LoadScene("360Video");
         }
     }
 
     public void OnButton4Clicked()
     {
+        VRFX.FadeOut();
         Application.Quit();
         Debug.Log("Quit app");
     }
