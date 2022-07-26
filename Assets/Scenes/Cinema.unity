@@ -2028,6 +2028,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 516382916, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 516382917, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 516382917, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 516382917, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2063314768, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5101170579121024708, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
       propertyPath: screenFade
       value: 
@@ -2082,6 +2102,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5101170579668010662, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9134810101606536112, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9134810101606536114, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 9134810101606536114, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9134810101606536114, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9134810101707924320, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 9134810101707924320, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9134810101707924334, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9134810102542641428, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
