@@ -7,7 +7,7 @@ using RedTeam19;
 public class SceneChangeAfterTime : MonoBehaviour
 {
    
-     public float delay = 3;
+     public float delay = 4;
     public string NewLevel = "Home";
     VRScreenEffects VRFX;
     [SerializeField] GameObject screenFade;
@@ -25,10 +25,9 @@ public class SceneChangeAfterTime : MonoBehaviour
 
     IEnumerator LoadLevelAfterDelay(float delay)
     {
-       
         yield return new WaitForSeconds(delay);
         VRFX.FadeOut();
+        yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(NewLevel);
-       
     }
 }

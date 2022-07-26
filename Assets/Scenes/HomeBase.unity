@@ -196,6 +196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4909997736706278934, guid: 2f8f205c84ab9394da28b56abbc5775d, type: 3}
+    - {fileID: 2139196810, guid: 2f8f205c84ab9394da28b56abbc5775d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2f8f205c84ab9394da28b56abbc5775d, type: 3}
 --- !u!1001 &121360881
 PrefabInstance:
@@ -537,6 +538,26 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1749416945920698718, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
   m_PrefabInstance: {fileID: 121360881}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &744775948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5101170578154120280, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
+  m_PrefabInstance: {fileID: 121360881}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &744775951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744775948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a590f8a110dae0a439365026354ef0e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 3
+  NewLevel: Home
+  screenFade: {fileID: 394706165}
 --- !u!114 &759351307 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5101170579121024708, guid: 2de34c6fee6a6a745800942f2b4e7148, type: 3}
@@ -833,7 +854,6 @@ GameObject:
   - component: {fileID: 1916403787}
   - component: {fileID: 1916403786}
   - component: {fileID: 1916403785}
-  - component: {fileID: 1916403788}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -889,21 +909,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1916403788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916403784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a590f8a110dae0a439365026354ef0e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 5
-  NewLevel: Home
-  screenFade: {fileID: 394706165}
 --- !u!1 &1972902358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,6 +1215,10 @@ PrefabInstance:
     - target: {fileID: 1898858129027788868, guid: 5d783b5d517b93f4e8d912c520991175, type: 3}
       propertyPath: m_Name
       value: VRFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898858129027788870, guid: 5d783b5d517b93f4e8d912c520991175, type: 3}
+      propertyPath: fadeSpeed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1898858129027788870, guid: 5d783b5d517b93f4e8d912c520991175, type: 3}
       propertyPath: flashSpeed
