@@ -33,7 +33,7 @@ RectTransform:
   - {fileID: 1440682421}
   - {fileID: 481315788}
   m_Father: {fileID: 7386589562495381318}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -242,7 +242,7 @@ RectTransform:
   m_LocalScale: {x: 0.005296574, y: 0.005296574, z: 0.005296574}
   m_Children: []
   m_Father: {fileID: 7386589562495381318}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -891,7 +891,7 @@ RectTransform:
   m_LocalScale: {x: 0.005296574, y: 0.005296574, z: 0.005296574}
   m_Children: []
   m_Father: {fileID: 7386589562495381318}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1158,7 +1158,7 @@ Transform:
   m_LocalScale: {x: 0.242362, y: 0.242362, z: 0.242362}
   m_Children: []
   m_Father: {fileID: 7386589562495381318}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 1.735, z: 0}
 --- !u!212 &913721707
 SpriteRenderer:
@@ -1665,11 +1665,6 @@ PrefabInstance:
       objectReference: {fileID: 4039626605873250493}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fbba25db72b0364d817aa47915f99d1, type: 3}
---- !u!224 &8660725172638113770 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 617222404004926719, guid: 3fbba25db72b0364d817aa47915f99d1, type: 3}
-  m_PrefabInstance: {fileID: 8115982588356627221}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7386589562787213470 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1595315761718147979, guid: 3fbba25db72b0364d817aa47915f99d1, type: 3}
@@ -1712,3 +1707,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &8660725172638113770 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 617222404004926719, guid: 3fbba25db72b0364d817aa47915f99d1, type: 3}
+  m_PrefabInstance: {fileID: 8115982588356627221}
+  m_PrefabAsset: {fileID: 0}
