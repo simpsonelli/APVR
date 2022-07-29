@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Simpsonelli Productions
-  productName: ArtistPortfolioVR
+  productName: Virtufolio
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -153,6 +153,9 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 11400000, guid: 4f25e0a0c60824f4397145e156f3f4d7, type: 2}
+  - {fileID: 0}
+  - {fileID: -452136448824532622, guid: 06555ff29d9cf994ebbcd7c820d004b9, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -171,7 +174,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.SimpsonelliProductions.ArtistPortfolioVR
-    Standalone: com.SimpsonelliProductions.ArtistPortfolioVR
+    Standalone: com.SimpsonelliProductions.Virtufolio
   buildNumber:
     Standalone: 0
     iPhone: 0
