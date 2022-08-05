@@ -10,10 +10,12 @@ using RedTeam19;
 public class WristMenu : MonoBehaviour
 {
     public GameObject wristUI;
-    public bool activeWristUI;
+    public bool activeWristUI = false;
     public AudioSource openMenu;
+    public AudioClip openMenuClip;
+    public bool audioAlreadyPlayed = false;
     public XRRig moveProvider;
-     VRScreenEffects VRFX;
+    VRScreenEffects VRFX;
     [SerializeField] GameObject screenFade;
 
     private void Awake()
@@ -68,13 +70,14 @@ public class WristMenu : MonoBehaviour
 
     public void MenuPressed(InputAction.CallbackContext context)
     {
-        if(context.performed)
+        if (context.performed)
             DisplayWristUI();
+
     }
 
     public void DisplayWristUI()
     {
-        if(activeWristUI)
+        if (activeWristUI)
         {
             wristUI.SetActive(false);
             activeWristUI = false;
@@ -83,7 +86,7 @@ public class WristMenu : MonoBehaviour
         {
             wristUI.SetActive(true);
             activeWristUI = true;
-            openMenu.Play();
+            openMenu.PlayOneShot(openMenuClip);
         }
     }
 }
